@@ -9,7 +9,32 @@ CamFlow development started in 2014 at the University of Cambridge's [Opera Rese
 Further development has been supported by Harvard University's [Center for Research on Computation and Society](https://crcs.seas.harvard.edu/) as part of the [Provenance@Harvard](https://projects.iq.harvard.edu/provenance-at-harvard) project (NSF grant [SSI-1450277](https://nsf.gov/awardsearch/showAward?AWD_ID=1450277)) and the University of Cambridge's [Digital Technology Group](https://www.cl.cam.ac.uk/research/dtg/www/).
 Development is currently being supported at the [University of Bristol Cyber Security Group](http://www.bristol.ac.uk/engineering/research/cyber-security/) and the [University of British Columbia](http://www.seltzer.com/margo/research).
 
-<a href="https://www.cl.cam.ac.uk/research/srg/opera/" target="_blank"><img src="./images/cambridge.png" width="45%"></a>
-<a href="https://syrah.eecs.harvard.edu/" target="_blank"><img src="./images/harvard.png" width="45%"></a>
-<a href="http://www.bristol.ac.uk/engineering/research/cyber-security/" target="_blank"><img src="./images/bristol.png" width="45%"></a></td>
-<a href="http://www.seltzer.com/margo/research" target="_blank"><img src="./images/ubc.jpg" width="45%"></a>
+<style>
+.r_row {
+  display: flex;
+  text-align: center;
+}
+
+.r_column {
+  flex: 50%;
+  padding: 5px;
+  margin: auto;
+}
+</style>
+
+<div class="r_row">
+  <div class="r_column">
+    <a href="https://www.cl.cam.ac.uk/research/srg/opera/" target="_blank"><img src="./images/cambridge.png" width="45%"></a>
+  </div>
+  <div class="r_column">
+    <a href="https://syrah.eecs.harvard.edu/" target="_blank"><img src="./images/harvard.png" width="45%"></a>
+  </div>
+</div>
+<div class="r_row">
+  <div class="r_column">
+    <a href="http://www.bristol.ac.uk/engineering/research/cyber-security/" target="_blank"><img src="./images/bristol.png" width="45%"></a></td>
+  </div>
+  <div class="r_column">
+    <a href="http://www.seltzer.com/margo/research" target="_blank"><img src="./images/ubc.png" width="45%"></a>
+  </div>
+</div>
