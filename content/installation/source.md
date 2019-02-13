@@ -57,7 +57,7 @@ This will build and install the CamFlow Linux Security Module as well as the use
 The kernel configuration derives from the configuration currently present on the system where you run the build. Early in the build process you will be presented with a GUI to customise the kernel configuration. If you are not sure what to do, do not modify the configuration.
 
 {{% block warn %}}
-Configuration options need to be carefully considered in resource constrained environment.
+Configuration options need to be carefully considered in resource-constrained environment.
 {{% /block %}}
 
 For the installation process to take effect you need to reboot the machine.
@@ -66,17 +66,14 @@ For the installation process to take effect you need to reboot the machine.
 sudo reboot now
 ```
 
-You can install older release of CamFlow as follow:
+You can install older releases of CamFlow using the following (replacing `v0.4.2` with your desired target version):
 
 ``` BASH
-
 git clone https://github.com/CamFlow/camflow-install
 cd camflow-install
 make v0.4.2
 sudo reboot now
 ```
-
-Replace `v0.4.2` by your desired target version.
 
 {{% block note %}}
 Only the most recent release is actively supported.
