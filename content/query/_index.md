@@ -5,8 +5,7 @@ anchor: "query"
 weight: 90
 ---
 
-
-Academic article discussing CamFlow query features is available [online](http://camflow.org/publications/ccs-2018.pdf).
+The concept behind CamQuery is described in our [CCS'18 paper](http://camflow.org/publications/ccs-2018.pdf).
 
 {{% block note %}}
 This section is under construction as we work further on this aspect of the project.
