@@ -13,4 +13,3 @@ To apply a new configuration, reboot the machine.
 Alternatively when developing policy you can experiment using `camflow` CLI (see `camflow -h`).
 Policies defined through the CLI are not persisted in current release.
 {{% /block %}}
-`
