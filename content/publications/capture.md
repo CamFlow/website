@@ -1,7 +1,7 @@
 ---
 title: "Capture"
 date: 2018-01-28T21:55:52+01:00
-anchor: "capture"
+anchor: "publications_capture"
 weight: 10
 ---
 Pasquier T., Han X., Moyer T., Bates A.,  Eyers D., Hermant O., Bacon J. and  Seltzer M. <strong>Runtime Analysis of Whole-System Provenance</strong>. Conference on Computer and Communications Security (CCS'18) (2018), ACM. [pdf](./publications/ccs-2018.pdf) [bib](./citations/ccs-2018.bib)
