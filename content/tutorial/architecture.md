@@ -2,7 +2,7 @@
 title: "Architecture overview"
 date: 2018-01-28T21:55:52+01:00
 anchor: "overview"
-weight: 1
+weight: 10
 ---
 
 [![CamFlow architecture overview](./images/arch.png "CamFlow architecture overview")](./images/arch.pdf)
@@ -18,9 +18,17 @@ The provenance records are published by CamFlow to [relayfs](https://lwn.net/Art
 The daemons retrieve those records, serialise them to a configuration-specified format and write them to a configuration-specified output.
 [source code](https://github.com/CamFlow/camflowd)
 
+{{% block note %}}
+Configuration details are discussed in the [recording configuration section](#publication).
+{{% /block %}}
+
 __camconfd:__ `camconfd` is a daemon charge with configuring the in-kernel capture mechanism.
 The configuration daemon reads from `/etc/camflow.ini` and load the specified configuration into the kernel via a [securityfs](https://lwn.net/Articles/153366/) interface.
 [source code](https://github.com/CamFlow/camconfd)
+
+{{% block note %}}
+Configuration details are discussed in the [capture configuration section](#capture).
+{{% /block %}}
 
 __camflow-cli:__ CamFlow CLI (`camflow`) allows to dynamically modify the capture configuration through the command line.
 [source code](https://github.com/CamFlow/camflow-cli)

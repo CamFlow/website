@@ -1,7 +1,7 @@
 ---
 title: "Walk-through"
 date: 2018-01-28T21:54:02+01:00
-anchor: "publications_usecases"
+anchor: "walk"
 weight: 20
 ---
 
