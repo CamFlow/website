@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="windows-1252"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:latexdraw="http://latexdraw.sourceforge.net/namespaces/latexdraw" version="1.1" baseProfile="full">
+    <g>
+        <g latexdraw:type="rectangle" id="id1107662001">
+            <rect x="361.0" y="1.0" width="318.0" height="298.0" latexdraw:borderPos="outer" stroke-width="2.0" stroke="#ffcccc" fill="#ffcccc"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id937839264">
+            <rect x="41.0" y="1.0" width="158.0" height="298.0" latexdraw:borderPos="outer" stroke-width="2.0" stroke="#99ccff" fill="#99ccff"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id333692986">
+            <rect x="201.0" y="1.0" width="158.0" height="298.0" latexdraw:borderPos="outer" stroke-width="2.0" stroke="#ccccff" fill="#ccccff"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id377964286">
+            <polyline points="0.0,120.0 700.0,120.0 " stroke-width="2.0" stroke="black" stroke-dasharray="8.819444444444445, 5.291666666666667" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="text" id="id1745012490" fill="black" latexdraw:position="l" transform="rotate(-90.0) translate(-120.0 -80.0)">
+            <text x="20.0" y="100.0">\bf Userspace</text>
+        </g>
+        <g latexdraw:type="text" id="id2104451226" fill="black" latexdraw:position="l" transform="rotate(-90.0) translate(-260.0 -220.0)">
+            <text x="20.0" y="240.0">\bf Kernel</text>
+        </g>
+        <g latexdraw:type="rectangle" id="id1090236972">
+            <rect x="41.0" y="101.0" width="158.0" height="38.0" latexdraw:borderPos="outer" stroke-width="2.0" stroke="black" fill="white" rx="3.84"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id686962980">
+            <rect x="41.0" y="181.0" width="638.0" height="38.0" latexdraw:borderPos="outer" stroke-width="2.0" stroke="black" fill="#ffcc66" rx="3.84"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id1762611402">
+            <rect x="41.0" y="221.0" width="638.0" height="38.0" latexdraw:borderPos="outer" stroke-width="2.0" stroke="black" fill="white" rx="3.84"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id1451115058">
+            <rect x="201.0" y="101.0" width="158.0" height="38.0" latexdraw:borderPos="outer" stroke-width="2.0" stroke="black" fill="white" rx="3.84"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id1989815826">
+            <rect x="41.0" y="141.0" width="158.0" height="38.0" latexdraw:borderPos="outer" stroke-width="2.0" stroke="black" fill="white" rx="3.84"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id1582201980">
+            <rect x="41.0" y="21.0" width="158.0" height="38.0" latexdraw:borderPos="outer" stroke-width="2.0" stroke="black" fill="white" rx="3.84"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id423105604">
+            <rect x="201.0" y="61.0" width="158.0" height="38.0" latexdraw:borderPos="outer" stroke-width="2.0" stroke="black" fill="#ffcc66" rx="3.84"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id1234653930">
+            <rect x="361.0" y="101.0" width="318.0" height="38.0" latexdraw:borderPos="outer" stroke-width="2.0" stroke="black" fill="white" rx="3.84"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id1328373561">
+            <rect x="361.0" y="61.0" width="158.0" height="38.0" latexdraw:borderPos="outer" stroke-width="2.0" stroke="black" fill="#ffcc66" rx="3.84"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id1257898404">
+            <rect x="521.0" y="21.0" width="158.0" height="38.0" latexdraw:borderPos="outer" stroke-width="2.0" stroke="black" fill="#ffcc66" rx="3.84"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id328709679">
+            <rect x="201.0" y="21.0" width="158.0" height="38.0" latexdraw:borderPos="outer" stroke-width="2.0" stroke="black" fill="white" rx="3.84"/>
+        </g>
+        <g latexdraw:type="text" id="id1703462483" fill="black" latexdraw:position="">
+            <text x="120.0" y="40.0">\bf application</text>
+        </g>
+        <g latexdraw:type="text" id="id2122578585" fill="black" latexdraw:position="">
+            <text x="280.0" y="40.0">\bf output</text>
+        </g>
+        <g latexdraw:type="text" id="id514770865" fill="black" latexdraw:position="">
+            <text x="600.0" y="40.0">\bf camflow-cli</text>
+        </g>
+        <g latexdraw:type="text" id="id901906808" fill="black" latexdraw:position="">
+            <text x="440.0" y="80.0">\bf camconfd</text>
+        </g>
+        <g latexdraw:type="text" id="id1495969514" fill="black" latexdraw:position="">
+            <text x="280.0" y="80.0">\bf camflowd</text>
+        </g>
+        <g latexdraw:type="text" id="id188201062" fill="black" latexdraw:position="">
+            <text x="280.0" y="120.0">\bf relayfs</text>
+        </g>
+        <g latexdraw:type="text" id="id1034713217" fill="black" latexdraw:position="">
+            <text x="360.0" y="200.0">\bf CamFlow capture mechanism</text>
+        </g>
+        <g latexdraw:type="text" id="id2028895390" fill="black" latexdraw:position="">
+            <text x="360.0" y="240.0">\bf kernel objects and resources</text>
+        </g>
+        <g latexdraw:type="text" id="id2031608369" fill="black" latexdraw:position="">
+            <text x="500.0" y="120.0">\bf securityfs</text>
+        </g>
+        <g latexdraw:type="text" id="id1557733870" fill="black" latexdraw:position="">
+            <text x="120.0" y="120.0">\bf systemcalls</text>
+        </g>
+        <g latexdraw:type="text" id="id853624528" fill="black" latexdraw:position="">
+            <text x="120.0" y="160.0">\bf LSM/NetFiler</text>
+        </g>
+        <g latexdraw:type="text" id="id897644089" fill="black" latexdraw:position="">
+            <text x="120.0" y="280.0">\bf Capture</text>
+        </g>
+        <g latexdraw:type="text" id="id1880307011" fill="black" latexdraw:position="">
+            <text x="280.0" y="280.0">\bf Recording</text>
+        </g>
+        <g latexdraw:type="text" id="id2042943413" fill="black" latexdraw:position="">
+            <text x="520.0" y="280.0">\bf Configuration</text>
+        </g>
+    </g>
+    <defs/>
+    <metadata>
+        <latexdraw:metadata>
+            <latexdraw:latexIncludes/>
+            <latexdraw:displayXScale>true</latexdraw:displayXScale>
+            <latexdraw:displayYScale>true</latexdraw:displayYScale>
+            <latexdraw:unit>CM</latexdraw:unit>
+            <latexdraw:zoom>1.0</latexdraw:zoom>
+            <latexdraw:magneticGridStyle>CUSTOMISED</latexdraw:magneticGridStyle>
+            <latexdraw:gridGap>20</latexdraw:gridGap>
+            <latexdraw:magneticGrid>true</latexdraw:magneticGrid>
+            <latexdraw:version>3.3.8</latexdraw:version>
+            <latexdraw:size>
+                <latexdraw:width>1549</latexdraw:width>
+                <latexdraw:height>837</latexdraw:height>
+            </latexdraw:size>
+            <latexdraw:position>
+                <latexdraw:x>0.0</latexdraw:x>
+                <latexdraw:y>0.0</latexdraw:y>
+            </latexdraw:position>
+        </latexdraw:metadata>
+    </metadata>
+</svg>

@@ -7,7 +7,16 @@ weight: 1
 
 ## Sample configuration
 
-Here is a sample `/etc/camflow.ini` configuration:
+One of the strengths of CamFlow is the ability to fine-tune the provenance information it captures.
+Edit `/etc/camflow.ini` to modify the capture configuration.
+To apply a new configuration, reboot the machine.
+
+{{% block tip %}}
+Alternatively when developing policy you can experiment using `camflow` CLI (see `camflow -h`).
+Policies defined through the CLI are not persisted in current release.
+{{% /block %}}
+
+Follows a sample `/etc/camflow.ini` configuration:
 
 ``` INI
 [provenance]
