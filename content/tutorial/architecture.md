@@ -19,7 +19,7 @@ The daemons retrieve those records, serialise them to a configuration-specified 
 [source code](https://github.com/CamFlow/camflowd)
 
 {{% block note %}}
-Configuration details are discussed in the [recording configuration section](#publication).
+Configuration details are discussed in the [recording configuration section](#recording).
 {{% /block %}}
 
 __camconfd:__ `camconfd` is a daemon charge with configuring the in-kernel capture mechanism.
