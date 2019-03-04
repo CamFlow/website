@@ -21,9 +21,9 @@ sudo apt-get install -y libprovenance=0.4.6-2
 sudo apt-get install -y camflowd=0.2.3-2
 sudo apt-get install -y camflow-cli=0.1.13-2
 sudo apt-get install -y camconfd=0.4.4-2
-sudo apt-get install -y linux-libc-dev=4.20.11camflow0.5.2+-1
-sudo apt-get install -y linux-image-4.20.11camflow0.5.2+=4.20.11camflow0.5.2+-1
-sudo apt-get install -y linux-headers-4.20.11camflow0.5.2+=4.20.11camflow0.5.2+-1
+sudo apt-get install -y linux-libc-dev=4.20.13camflow0.5.3+-1
+sudo apt-get install -y linux-image-4.20.13camflow0.5.3+=4.20.13camflow0.5.3+-1
+sudo apt-get install -y linux-headers-4.20.13camflow0.5.3+=4.20.13camflow0.5.3+-1
 ```
 
 {{% block note %}}
