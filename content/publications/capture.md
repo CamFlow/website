@@ -4,7 +4,7 @@ date: 2018-01-28T21:55:52+01:00
 anchor: "publications_capture"
 weight: 10
 ---
-Pasquier T., Han X., Moyer T., Bates A.,  Eyers D., Hermant O., Bacon J. and  Seltzer M. <strong>Runtime Analysis of Whole-System Provenance</strong>. Conference on Computer and Communications Security (CCS'18) (2018), ACM. [pdf](./publications/ccs-2018.pdf) [bib](./citations/ccs-2018.bib)
+Pasquier T., Han X., Moyer T., Bates A.,  Eyers D., Hermant O., Bacon J. and  Seltzer M. <strong>Runtime Analysis of Whole-System Provenance</strong>. Conference on Computer and Communications Security (CCS'18) (2018), ACM. [pdf](./publications/ccs-2018.pdf) [bib](./citations/ccs-2018.bib) [video](http://tfjmp.org/talk/2018-css/)
 
 Pasquier T., Han X., Goldstein M., Moyer T., Eyers D., Seltzer M. and Bacon J. <strong>Practical Whole-System Provenance Capture</strong>. Symposium on Cloud Computing (SoCC'17) (2017), ACM. [pdf](./publications/socc-2017.pdf) [bib](./citations/socc-2017.bib) [poster](./posters/socc-2017.pdf)
 
