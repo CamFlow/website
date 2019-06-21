@@ -60,6 +60,26 @@ The kernel configuration derives from the configuration currently present on the
 Configuration options need to be carefully considered in resource-constrained environment.
 {{% /block %}}
 
+{{% block warn %}}
+Kernel version 5.1.x saw the modification of Linux Security Module stacking.
+It is important to ensure that CamFlow is properly loaded and is processed last.
+
+During the configuration stage, select the `Security options`:
+
+![Select "Security options".](./images/security_options.png)
+
+Then select the list at the bottom of the menu:
+
+![Select the list at the bottom of the menu.](./images/list.png)
+
+`provenance` should be listed and appear last:
+
+![provenance should be listed and appear last.](./images/last.png)
+
+If `provenance` is not listed, CamFlow module will simply not be loaded.
+
+{{% /block %}}
+
 For the installation process to take effect you need to reboot the machine.
 
 ``` BASH
