@@ -6,6 +6,6 @@ weight: 50
 ---
 
 There are three main options covered below for how to install CamFlow:
-1. using your favourite package manager on Fedora or Ubuntu;
+1. using your favorite package manager on Fedora;
 2. building the kernel on the local machine; or
 3. using [vagrant](https://www.vagrantup.com/) to set up a virtual machine.

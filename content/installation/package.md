@@ -5,7 +5,7 @@ anchor: "package"
 weight: 10
 ---
 
-The quickest way to install CamFlow is through the packages hosted on [packagecloud](https://packagecloud.io/camflow/provenance). For now, only Fedora and Ubuntu are supported (please, click on this [link](https://packagecloud.io/camflow/provenance) and check which release(s) is/are currently supported). The rest of this section describes how to install CamFlow and its dependencies on Fedora and Ubuntu.
+The quickest way to install CamFlow is through the packages hosted on [packagecloud](https://packagecloud.io/camflow/provenance). For now, only Fedora is supported (please, click on this [link](https://packagecloud.io/camflow/provenance) and check which release(s) is/are currently supported) and Ubuntu partially supported. The rest of this section describes how to install CamFlow and its dependencies on Fedora and Ubuntu.
 
 ### Fedora
 
@@ -13,22 +13,6 @@ The quickest way to install CamFlow is through the packages hosted on [packagecl
 curl -s https://packagecloud.io/install/repositories/camflow/provenance/script.rpm.sh | sudo bash
 sudo dnf -y install camflow
 ```
-
-### Ubuntu
-```
-curl -s https://packagecloud.io/install/repositories/camflow/provenance/script.deb.sh | sudo bash
-sudo apt-get install -y libprovenance=0.4.6-2
-sudo apt-get install -y camflowd=0.2.3-2
-sudo apt-get install -y camflow-cli=0.1.13-2
-sudo apt-get install -y camconfd=0.4.4-2
-sudo apt-get install -y linux-libc-dev=4.20.13camflow0.5.3+-1
-sudo apt-get install -y linux-image-4.20.13camflow0.5.3+=4.20.13camflow0.5.3+-1
-sudo apt-get install -y linux-headers-4.20.13camflow0.5.3+=4.20.13camflow0.5.3+-1
-```
-
-{{% block note %}}
-Check [online](https://packagecloud.io/camflow/provenance) to find the latest version number and update the above script accordingly.
-{{% /block %}}
 
 ### After installing packages
 
