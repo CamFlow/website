@@ -5,7 +5,12 @@ anchor: "package"
 weight: 10
 ---
 
-The quickest way to install CamFlow is through the packages hosted on [packagecloud](https://packagecloud.io/camflow/provenance). For now, only Fedora is supported (please, click on this [link](https://packagecloud.io/camflow/provenance) and check which release(s) is/are currently supported) and Ubuntu partially supported. The rest of this section describes how to install CamFlow and its dependencies on Fedora and Ubuntu.
+The quickest way to install CamFlow is through the packages hosted on [packagecloud](https://packagecloud.io/camflow/provenance). For now, only Fedora is supported (please, click on this [link](https://packagecloud.io/camflow/provenance) and check which release(s) is/are currently supported).
+
+{{% block note %}}
+We also [distribute packages for Ubuntu](https://packagecloud.io/app/camflow/provenance/search?dist=ubuntu%2Fbionic),
+but they are more sparsely tested, we strongly encourage the use of Fedora.
+{{% /block %}}
 
 ### Fedora
 
@@ -30,6 +35,8 @@ After reboot we should be ready to use CamFlow.
 sudo reboot now
 ```
 
-{{% block note %}}
-We are a small research team. Packages are tested in virtual environment running over a limited set of hardware configurations. In most cases things work fine. However, if you encounter any issue, please do look at how to build the project from source.
+{{% block warn %}}
+Packages are tested in virtual environment with a limited set of configurations.
+In most cases things work fine.
+However, if you encounter any issue, please do look at how to build the project from source.
 {{% /block %}}
