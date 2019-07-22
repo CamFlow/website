@@ -2,7 +2,7 @@
 title: "Vagrant"
 date: 2018-01-28T21:54:02+01:00
 anchor: "vagrant"
-weight: 20
+weight: 30
 ---
 
 Using a vagrant virtual machine is much simpler. First you need to install [vagrant](https://www.vagrantup.com/docs/installation/) and [virtualbox](https://www.virtualbox.org/manual/ch02.html).
@@ -40,7 +40,3 @@ vagrant up
 {{% block warn %}}
 Running virtual machines is resource consuming. Please, make sure the host has sufficient resource to do so (disk space, RAM, CPU etc.).
 {{% /block %}}
-
-## After Reboot
-
-When booting a VM after successful provisioning, ensure that the CamFlow kernel is chosen in the [GRUB](https://www.gnu.org/software/grub/) menu.
