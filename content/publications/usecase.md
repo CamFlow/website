@@ -5,6 +5,8 @@ anchor: "publications_usecases"
 weight: 20
 ---
 
+Han X., Pasquier T. and Seltzer M. <strong>From Here to Provtopia</strong>. VLDB Workshop on Towards Polystores that manage multiple Databases, Privacy, Security and/or Policy Issues for Heterogenous Data (Poly'19) (2019), Springer. [pdf](./publications/poly-2019.pdf) [bib](./citations/poly-2019.bib)
+
 Han X., Pasquier T. and Seltzer M. <strong>Provenance-based Intrusion Detection: Opportunities and Challenges</strong>. Workshop on the Theory and Practice of Provenance (TaPP'18) (2018), USENIX. [pdf](./publications/tapp-2018.pdf) [bib](./citations/tapp-2018.bib) [website](https://www.usenix.org/conference/tapp2018/presentation/han)
 
 Wang F., Joung Y., and Mickens J. <strong>Cobweb: Practical Remote Attestation Using Contextual Graphs</strong>. Workshop on System Software for Trusted Execution (SysTEX'17) (2017), ACM. [pdf](https://mickens.seas.harvard.edu/files/mickens/files/cobweb.pdf) [bib](https://dl.acm.org/downformats.cfm?id=3152705&parent_id=3152701&expformat=bibtex&CFID=837880949&CFTOKEN=91832166)
