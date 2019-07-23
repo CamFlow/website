@@ -5,7 +5,7 @@ anchor: "publications_usecases"
 weight: 20
 ---
 
-Han X., Pasquier T. and Seltzer M. <strong>From Here to Provtopia</strong>. VLDB Workshop on Towards Polystores that manage multiple Databases, Privacy, Security and/or Policy Issues for Heterogenous Data (Poly'19) (2019), Springer. [pdf](./publications/poly-2019.pdf) [bib](./citations/poly-2019.bib)
+Pasquier T., Eyers D. and Seltzer M. <strong>From Here to Provtopia</strong>. VLDB Workshop on Towards Polystores that manage multiple Databases, Privacy, Security and/or Policy Issues for Heterogenous Data (Poly'19) (2019), Springer. [pdf](./publications/poly-2019.pdf) [bib](./citations/poly-2019.bib)
 
 Han X., Pasquier T. and Seltzer M. <strong>Provenance-based Intrusion Detection: Opportunities and Challenges</strong>. Workshop on the Theory and Practice of Provenance (TaPP'18) (2018), USENIX. [pdf](./publications/tapp-2018.pdf) [bib](./citations/tapp-2018.bib) [website](https://www.usenix.org/conference/tapp2018/presentation/han)
 
