@@ -9,19 +9,17 @@ There are three main options covered below for how to install CamFlow:
 1. using your favorite package manager on Fedora;
 2. building the kernel on the local machine; or
 3. using [vagrant](https://www.vagrantup.com/) to set up a virtual machine.
+The installation process can take a significant amount of time depending on your
+machine/network configuration.
+If you plan to use VM we suggest to use a recent machine with at least 16GB of RAM
+and 20GB of disk space.
 
 {{% block note %}}
-This is an academic project. While CamFlow is actively maintained, an operating system
+CamFlow is an academic project. While CamFlow is actively maintained, an operating system
 is a complex environment with a multitude of moving parts and our resources are limited.
 CamFlow is mostly tested in virtualized environment and we do not have the resources
 for extensive test.
 Please, get in touch with
 [Thomas Pasquier](mailto:thomas.pasquier@bristol.ac.uk)
 if you encounter any issue.
-{{% /block %}}
-
-{{% block warn %}}
-Regardless of your choice of installation method, the installation process can
-take an extensive amount of time depending on your machine/network configuration.
-We also strongly encourage the use of a recent machine with a minimum of 16GB RAM.
 {{% /block %}}
