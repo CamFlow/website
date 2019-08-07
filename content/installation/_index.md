@@ -10,7 +10,7 @@ There are three main options covered below for how to install CamFlow:
 2. building the kernel on the local machine; or
 3. using [vagrant](https://www.vagrantup.com/) to set up a virtual machine.
 
-{{% block warn %}}
+{{% block note %}}
 This is an academic project. While CamFlow is actively maintained, an operating system
 is a complex environment with a multitude of moving parts and our resources are limited.
 CamFlow is mostly tested in virtualized environment and we do not have the resources
@@ -18,4 +18,10 @@ for extensive test.
 Please, get in touch with
 [Thomas Pasquier](mailto:thomas.pasquier@bristol.ac.uk)
 if you encounter any issue.
+{{% /block %}}
+
+{{% block warn %}}
+Regardless of your choice of installation method, the installation process can
+take an extensive amount of time depending on your machine/network configuration.
+We also strongly encourage the use of a recent machine with a minimum of 16GB RAM.
 {{% /block %}}
