@@ -5,6 +5,8 @@ anchor: "publications_usecases"
 weight: 20
 ---
 
+Chan S. C., Cheney J., Bhatotia P., Gehani A., Irshad H., Pasquier T., Carata L. and Seltzer M. <strong>ProvMark: A Provenance Expressiveness Benchmarking System</strong>. International Middleware Conference (Middleware'19) (2019), ACM/IFIP. [bib](./citations/mw-2019.bib)
+
 Pasquier T., Eyers D. and Seltzer M. <strong>From Here to Provtopia</strong>. VLDB Workshop on Towards Polystores that manage multiple Databases, Privacy, Security and/or Policy Issues for Heterogenous Data (Poly'19) (2019), Springer. [pdf](./publications/poly-2019.pdf) [bib](./citations/poly-2019.bib)
 
 Englbrecht L., Langner G., Pernul G. and Quirchmayr G. <strong> Enhancing credibility of digital evidence through provenance-based incident response handling</strong>. International Conference on Availability, Reliability and Security (ARES'19), ACM. [website](https://dl.acm.org/citation.cfm?doid=3339252.3339275) [bib](https://dl.acm.org/downformats.cfm?id=3339275&parent_id=3339252&expformat=bibtex)
