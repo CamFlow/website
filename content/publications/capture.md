@@ -10,4 +10,4 @@ Pasquier T., Han X., Goldstein M., Moyer T., Eyers D., Seltzer M. and Bacon J. <
 
 Pasquier T., Singh J., , Bacon J., and Eyers D. <strong>Information Flow Audit for PaaS Clouds</strong>. In International Conference on Cloud Engineering (IC2E'16) (2016), IEEE. [pdf](./publications/ic2e-2016.pdf) [bib](./citations/ic2e-2016.bib)
 
-Pasquier T., Singh J., Eyers D., and Bacon J. <strong>CamFlow: Managed Data-Sharing for Cloud Services</strong>. IEEE Transactions on Cloud Computing (2015), IEEE. [pdf](./publications/tcc-2015.pdf) [bib](./citations/tcc-2015.bib)
+Pasquier T., Singh J., Eyers D., and Bacon J. <strong>CamFlow: Managed Data-Sharing for Cloud Services</strong>. IEEE Transactions on Cloud Computing (TCC) (2015), IEEE. [pdf](./publications/tcc-2015.pdf) [bib](./citations/tcc-2015.bib)
