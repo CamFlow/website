@@ -17,10 +17,10 @@ Here is a sample `/etc/camflowd.ini` configuration.
 
 ``` INI
 [general]
-; output=null
-; output=mqtt
-; output=unix_socket
-; output=fifo
+;output=null
+;output=mqtt
+;output=unix_socket
+;output=fifo
 output=log
 
 format=w3c
@@ -35,6 +35,8 @@ username=camflow
 password=test
 ; message delivered: 0 at most once, 1 at least once, 2 exactly once
 qos=2
+; topic, provided prefix + machine_id (e.g. camflow/provenance/1234)
+topic=camflow/provenance/
 
 [unix]
 address=/tmp/camflowd.sock
