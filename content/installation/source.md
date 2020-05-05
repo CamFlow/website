@@ -73,16 +73,3 @@ For the installation process to take effect you need to reboot the machine.
 ``` BASH
 sudo reboot now
 ```
-
-You can install older releases of CamFlow using the following (replacing `v0.4.2` with your desired target version):
-
-``` BASH
-git clone https://github.com/CamFlow/camflow-install
-cd camflow-install
-make v0.4.2
-sudo reboot now
-```
-
-{{% block note %}}
-Only the most recent release is actively supported.
-{{% /block %}}
