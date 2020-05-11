@@ -1,4 +1,4 @@
-baseURL = "http://camflow.org/"
+baseURL = "https://camflow.org/"
 languageCode = "en-us"
 
 title = "CamFlow"
