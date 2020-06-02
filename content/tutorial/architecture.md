@@ -22,7 +22,7 @@ The daemons retrieve those records, serialise them to a configuration-specified 
 Configuration details are discussed in the [recording configuration section](#recording).
 {{% /block %}}
 
-__camconfd:__ `camconfd` is a daemon charge with configuring the in-kernel capture mechanism.
+__camconfd:__ `camconfd` is a daemon charged with configuring the in-kernel capture mechanism.
 The configuration daemon reads from `/etc/camflow.ini` and load the specified configuration into the kernel via a [securityfs](https://lwn.net/Articles/153366/) interface.
 [source code](https://github.com/CamFlow/camconfd)
 
@@ -30,7 +30,7 @@ The configuration daemon reads from `/etc/camflow.ini` and load the specified co
 Configuration details are discussed in the [capture configuration section](#capture).
 {{% /block %}}
 
-__camflow-cli:__ CamFlow CLI (`camflow`) allows to dynamically modify the capture configuration through the command line.
+__camflow-cli:__ CamFlow CLI (`camflow`) allows to dynamically modify the capture configuration through the command line. Further details are given in [our walk through tutorial](#walk).
 [source code](https://github.com/CamFlow/camflow-cli)
 
 __libprovenance:__ is a C library implementing userspace utility functions to interact with CamFlow [relayfs](https://lwn.net/Articles/174669/) and [securityfs](https://lwn.net/Articles/153366/) interfaces.
