@@ -9,8 +9,8 @@ weight: 10
 
 __CamFlow capture mechanism:__ CamFlow is an implementation of the [whole-system provenance concept](http://patrickmcdaniel.org/pubs/acsac12.pdf).
 The idea is to perform provenance capture from the OS perspective, while providing guarantees about its completeness.
-This is achieved by relying on the OS [reference monitor](https://en.wikipedia.org/wiki/Reference_monitor) that interpose between user level applications and kernel objects.
-CamFlow is implemented in the Linux kernel and relies on the [Linux Security Module framework](https://www.kernel.org/doc/Documentation/security/LSM.txt) and the [NetFilter framework](https://en.wikipedia.org/wiki/Netfilter) to effect the interposition.
+This is achieved by relying on the OS [reference monitor](https://en.wikipedia.org/wiki/Reference_monitor) that capture interactions between user level applications and kernel objects.
+CamFlow is implemented in the Linux kernel and relies on the [Linux Security Module framework](https://www.kernel.org/doc/Documentation/security/LSM.txt) and the [NetFilter framework](https://en.wikipedia.org/wiki/Netfilter) to effect the capture.
 [source code](https://github.com/CamFlow/camflow-dev)
 
 __camflowd:__ `camflowd` is a daemon charged of recording the provenance captured  in the kernel by CamFlow.
