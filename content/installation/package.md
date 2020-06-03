@@ -9,7 +9,7 @@ The quickest way to install CamFlow is through the packages hosted on [packagecl
 
 {{% block note %}}
 We also [distribute packages for Ubuntu](https://packagecloud.io/app/camflow/provenance/search?dist=ubuntu%2Fbionic),
-but they are more sparsely tested, we strongly encourage the use of Fedora.
+but they are more sparsely tested, **we strongly encourage the use of Fedora**.
 {{% /block %}}
 
 ### Fedora
