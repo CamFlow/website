@@ -60,7 +60,7 @@ Then select the list at the bottom of the menu:
 
 ![Select the list at the bottom of the menu.](./images/list.png)
 
-`provenance` should be listed and appear last (i.e. you should add it to the list):
+`provenance` **must** be listed and **should** appear last (i.e. you should add it to the list):
 
 ![provenance should be listed and appear last.](./images/last.png)
 
