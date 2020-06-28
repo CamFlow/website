@@ -5,7 +5,7 @@ anchor: "publications_usecases"
 weight: 20
 ---
 
-[9] Han X., Pasquier T., Bates A., Mickens J. and Seltzer M. <strong>UNICORN: Runtime Provenance-Based Detector for Advanced Persistent Threats</strong>. Network and Distributed System Security Symposium (NDSS'20) (2020). [pdf](./publications/2020-ndss.pdf) [bib](./citations/2020-ndss.bib)
+[9] Han X., Pasquier T., Bates A., Mickens J. and Seltzer M. <strong>UNICORN: Runtime Provenance-Based Detector for Advanced Persistent Threats</strong>. Network and Distributed System Security Symposium (NDSS'20) (2020). [pdf](./publications/2020-ndss.pdf) [bib](./citations/2020-ndss.bib) [video](https://www.youtube.com/watch?v=B9ACkb320s0)
 
 [8] Han X., Mickens J., Gehani A., Seltzer M. and Pasquier T. <strong>Xanthus: Push-button Orchestration of Host Provenance Data Collection</strong>. International Workshop on Practical Reproducible Evaluation of Systems (P-RECS'20) (2020). [pdf](./publications/2020-precs.pdf) [bib](./citations/2020-precs.bib)
 
