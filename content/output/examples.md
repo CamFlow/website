@@ -5,7 +5,7 @@ anchor: "examples"
 weight: 10
 ---
 
-_Example of an inode vertex:_
+_Example of an inode vertex in W3C PROV format:_
 ```
 "ABAAAAAAACAe9wIAAAAAAE7aeaI+200UAAAAAAAAAAA=": {
     "cf:id": "194334",
@@ -24,8 +24,31 @@ _Example of an inode vertex:_
     "prov:label": "[fifo] 0"
 }
 ```
+_Example of an inode vertex in SPADE JSON format:_
+```
+{
+  "type":"Entity",
+  "id":"ACAAAAAAACDZtAAAAAAAAAEAAACVwxEABgAAAAAAAAA=",
+  "annotations":
+  {
+    "object_id":"46297",
+    "object_type":"socket",
+    "boot_id":1,
+    "cf:machine_id":"cf:1164181",
+    "version":6,"cf:date":"2020:07:11T10:41:28",
+    "epoch":2,
+    "uid":0,
+    "gid":0,
+    "mode":"0xc1ff",
+    "secctx":"system_u:object_r:unlabeled_t:s0",
+    "ino":18274,
+    "uuid":"00000000-0000-0000-0000-000000000000"
+  }
+}
+```
 
-_Example of a write edge:_
+
+_Example of a write edge in W3C PROV format:_
 ```
 "QAAAAAAAQIANAAAAAAAAAE7aeaI+200UAAAAAAAAAAA=": {
     "cf:id": "13",
@@ -39,7 +62,32 @@ _Example of a write edge:_
     "prov:activity": "AQAAAAAAAEAf9wIAAAAAAE7aeaI+200UAQAAAAAAAAA=",
     "prov:entity": "ABAAAAAAACAe9wIAAAAAAE7aeaI+200UAQAAAAAAAAA=",
     "cf:offset": "0"
- }
+}
+```
+
+_Example of a write edge in SPADE JSON format:_
+```
+{
+  "type":"WasGeneratedBy",
+  "from":"ABAAAAAAACCi2wAAAAAAAAEAAACVwxEAAQAAAAAAAAA=",
+  "to":"AQAAAAAAAECk2wAAAAAAAAEAAACVwxEACQAAAAAAAAA=",
+  "annotations":
+  {
+    "id":"IAAAAAAAQID0CwAAAAAAAAEAAACVwxEAAAAAAAAAAAA=",
+    "relation_id":"3060",
+    "relation_type":"write",
+    "boot_id":1,
+    "cf:machine_id":"cf:1164181",
+    "cf:date":"2020:07:11T10:41:28",
+    "epoch":2,
+    "jiffies":"4294759940",
+    "allowed":"true",
+    "flags":"2",
+    "task_id":"56228",
+    "from_type":"pipe",
+    "to_type":"task"
+  }
+}
 ```
 
 {{% block note %}}
