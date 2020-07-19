@@ -1,5 +1,5 @@
 ---
-title: "Use cases"
+title: "Applications"
 date: 2018-01-28T21:54:02+01:00
 anchor: "publications_usecases"
 weight: 20
