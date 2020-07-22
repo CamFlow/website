@@ -24,7 +24,7 @@ Development is currently being supported by the [University of Bristol](http://w
 
 <div class="r_row">
   <div class="r_column">
-    <a href="http://www.bristol.ac.uk/engineering/research/cyber-security/" target="_blank"><img src="./images/bristol.png" width="45%"></a></td>
+    <a href="http://www.bris.ac.uk/engineering/departments/computerscience/" target="_blank"><img src="./images/bristol.png" width="45%"></a></td>
   </div>
   <div class="r_column">
     <a href="http://www.seltzer.com/margo/research" target="_blank"><img src="./images/ubc.png" width="45%"></a>
