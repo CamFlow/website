@@ -9,7 +9,7 @@ weight: 20
 
 [8] Han X., Mickens J., Gehani A., Seltzer M. and Pasquier T. <strong>Xanthus: Push-button Orchestration of Host Provenance Data Collection</strong>. International Workshop on Practical Reproducible Evaluation of Systems (P-RECS'20) (2020). [pdf](./publications/2020-precs.pdf) [bib](./citations/2020-precs.bib)
 
-[7] G. Ayoade, A. Khandakar, S. Pracheta, G. Yang, A. Anmol, J. Kangkook, K. Latifur, and S. Anoop. <strong>Evolving Advanced Persistent Threat Detection using Provenance Graph and Metric Learning</strong>. Conference on Communications and Network Security (CNS'20) (2020). [article](https://ieeexplore.ieee.org/abstract/document/9162264?casa_token=Ou1p7TqBNKIAAAAA:k77G2HXhG2EbMg0MmwpeIEr0yIGh6PE2VwCPL5J-Y-F6EHLsU7rSNMEcDtYcE5fufYGnogmgXQ) [bib]
+[7] G. Ayoade, A. Khandakar, S. Pracheta, G. Yang, A. Anmol, J. Kangkook, K. Latifur, and S. Anoop. <strong>Evolving Advanced Persistent Threat Detection using Provenance Graph and Metric Learning</strong>. Conference on Communications and Network Security (CNS'20) (2020). [article](https://ieeexplore.ieee.org/abstract/document/9162264?casa_token=Ou1p7TqBNKIAAAAA:k77G2HXhG2EbMg0MmwpeIEr0yIGh6PE2VwCPL5J-Y-F6EHLsU7rSNMEcDtYcE5fufYGnogmgXQ) [bib](./citations/2020-cns.bib)
 
 [7] Chan S. C., Cheney J., Bhatotia P., Gehani A., Irshad H., Pasquier T., Carata L. and Seltzer M. <strong>ProvMark: A Provenance Expressiveness Benchmarking System</strong>. International Middleware Conference (Middleware'19) (2019), ACM/IFIP. [pdf](./publications/mw-2019.pdf) [bib](./citations/mw-2019.bib)
 
