@@ -42,6 +42,10 @@ make all
 
 This will build and install the CamFlow Linux Security Module as well as the userspace tools. The whole installation procedure may take a significant amount of time. The installation process may ask for the root password, so may not complete in an unattended manner.
 
+Through the build process you will be prompted to modify the kernel configuration.
+You can in addition to enabling provenance capture: set persistence of provenance state on/off (off by default),
+and whole-system capture from boot on/off (off by default).
+
 The kernel configuration derives from the configuration currently present on the system where you run the build. Early in the build process you will be presented with a GUI to customise the kernel configuration. If you are not sure what to do, do not modify the configuration.
 
 {{% block warn %}}
