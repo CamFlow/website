@@ -16,14 +16,9 @@ See this [issue](https://github.com/CamFlow/documentation/issues/3) for details.
 
 ``` BASH
 sudo dnf groupinstall 'Development Tools'
-sudo dnf install ncurses-devel cmake clang gcc-c++ wget git openssl-devel zlib patch mosquitto bison flex ruby dwarves elfutils-libelf-devel
-```
-
-#### Ubuntu
-
-``` BASH
-sudo apt-get -y install build-essential
-sudo apt-get -y install libncurses-dev cmake clang g++ wget git libssl-dev bc nano patch mosquitto bison flex ruby dwarves libelf-dev
+sudo dnf install ncurses-devel cmake clang gcc-c++ wget git openssl-devel zlib
+sudo dnf install patch mosquitto bison flex ruby dwarves elfutils-libelf-devel
+sudo dnf install uthash-devel inih-devel paho-c-devel
 ```
 
 ### Building and Installing the kernel
