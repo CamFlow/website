@@ -38,3 +38,5 @@ Development is currently being supported by the [University of Bristol](http://w
     <a href="https://syrah.eecs.harvard.edu/" target="_blank"><img src="./images/harvard.png" width="45%"></a>
   </div>
 </div>
+
+Thanks to [Cloudsmith](https://cloudsmith.com/) for providing hosting for our binary packages.
