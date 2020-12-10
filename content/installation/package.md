@@ -5,22 +5,16 @@ anchor: "package"
 weight: 10
 ---
 
-The quickest way to install CamFlow is through the packages hosted on [packagecloud](https://packagecloud.io/camflow/provenance). For now, only Fedora is supported (please, click on this [link](https://packagecloud.io/camflow/provenance) and check which release(s) is/are currently supported).
-
-{{% block note %}}
-We also [distribute packages for Ubuntu](https://packagecloud.io/app/camflow/provenance/search?dist=ubuntu%2Fbionic),
-but they are more sparsely tested, **we strongly encourage the use of Fedora**.
-{{% /block %}}
+The quickest way to install CamFlow is through the packages hosted on **[cloudsmith](https://cloudsmith.io/~camflow/repos/camflow/packages/)**. For now, only Fedora is supported (please, click on this [link](https://cloudsmith.io/~camflow/repos/camflow/packages/) and check which release(s) is/are currently supported).
 
 ### Fedora
 
 ``` BASH
-curl -s https://packagecloud.io/install/repositories/camflow/provenance/script.rpm.sh | sudo bash
+curl -1sLf 'https://dl.cloudsmith.io/public/camflow/camflow/cfg/setup/bash.rpm.sh' | sudo -E bash
 sudo dnf -y install camflow
 ```
 
 ### After installing packages
-
 
 Next we need to activate the two CamFlow services:
 

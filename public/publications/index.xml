@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on CamFlow</title>
+    <link>https://camflow.org/publications/</link>
+    <description>Recent content in Publications on CamFlow</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Jan 2018 22:01:36 +0100</lastBuildDate><atom:link href="https://camflow.org/publications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Capture</title>
+      <link>https://camflow.org/publications/capture/</link>
+      <pubDate>Sun, 28 Jan 2018 21:55:52 +0100</pubDate>
+      
+      <guid>https://camflow.org/publications/capture/</guid>
+      <description>[4] Pasquier T., Han X., Moyer T., Bates A., Eyers D., Hermant O., Bacon J. and Seltzer M. Runtime Analysis of Whole-System Provenance. Conference on Computer and Communications Security (CCS&#39;18) (2018), ACM. pdf bib video
+[3] Pasquier T., Han X., Goldstein M., Moyer T., Eyers D., Seltzer M. and Bacon J. Practical Whole-System Provenance Capture. Symposium on Cloud Computing (SoCC&#39;17) (2017), ACM. pdf bib poster
+[2] Pasquier T., Singh J., , Bacon J.</description>
+    </item>
+    
+    <item>
+      <title>Applications</title>
+      <link>https://camflow.org/publications/applications/</link>
+      <pubDate>Sun, 28 Jan 2018 21:54:02 +0100</pubDate>
+      
+      <guid>https://camflow.org/publications/applications/</guid>
+      <description>[9] Han X., Pasquier T., Bates A., Mickens J. and Seltzer M. UNICORN: Runtime Provenance-Based Detector for Advanced Persistent Threats. Network and Distributed System Security Symposium (NDSS&#39;20) (2020). pdf bib video
+[8] Han X., Mickens J., Gehani A., Seltzer M. and Pasquier T. Xanthus: Push-button Orchestration of Host Provenance Data Collection. International Workshop on Practical Reproducible Evaluation of Systems (P-RECS&#39;20) (2020). pdf bib
+[7] G. Ayoade, A. Khandakar, S. Pracheta, G.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installation on CamFlow</title>
+    <link>https://camflow.org/installation/</link>
+    <description>Recent content in Installation on CamFlow</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Jan 2018 21:58:09 +0100</lastBuildDate><atom:link href="https://camflow.org/installation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Package manager</title>
+      <link>https://camflow.org/installation/package/</link>
+      <pubDate>Sun, 28 Jan 2018 21:55:52 +0100</pubDate>
+      
+      <guid>https://camflow.org/installation/package/</guid>
+      <description>The quickest way to install CamFlow is through the packages hosted on cloudsmith. For now, only Fedora is supported (please, click on this link and check which release(s) is/are currently supported).
+Fedora curl -1sLf &amp;#39;https://dl.cloudsmith.io/public/camflow/camflow/cfg/setup/bash.rpm.sh&amp;#39; | sudo -E bash sudo dnf -y install camflow After installing packages Next we need to activate the two CamFlow services:
+sudo systemctl enable camconfd.service sudo systemctl enable camflowd.service After reboot we should be ready to use CamFlow.</description>
+    </item>
+    
+    <item>
+      <title>From source</title>
+      <link>https://camflow.org/installation/source/</link>
+      <pubDate>Sun, 28 Jan 2018 21:54:02 +0100</pubDate>
+      
+      <guid>https://camflow.org/installation/source/</guid>
+      <description>Dependencies First we need to install the dependencies required to build our kernel.
+Depending on how recent your OS version is, you should install libelf-dev, libelf-devel, or elfutils-libelf-devel. See this issue for details.
+Fedora sudo dnf groupinstall &amp;#39;Development Tools&amp;#39; sudo dnf install ncurses-devel cmake clang gcc-c++ wget git openssl-devel zlib sudo dnf install patch mosquitto bison flex ruby dwarves elfutils-libelf-devel sudo dnf install uthash-devel inih-devel paho-c-devel Building and Installing the kernel We first need to clone the camflow-install repository:</description>
+    </item>
+    
+    <item>
+      <title>Vagrant</title>
+      <link>https://camflow.org/installation/vagrant/</link>
+      <pubDate>Sun, 28 Jan 2018 21:54:02 +0100</pubDate>
+      
+      <guid>https://camflow.org/installation/vagrant/</guid>
+      <description>Using a vagrant virtual machine is much simpler. First you need to install vagrant and virtualbox.
+On Ubuntu, for example, that can be done as follows:
+sudo apt-get install virtualbox sudo apt-get install vagrant Some Linux distributions ship very outdated version of VirtualBox or Vagrant. Outdated versions, and host/guest version mismatch are known to cause all sorts of troubles during provisioning.
+Please check Vagrant and VirtualBox for details on how to install the latest version.</description>
+    </item>
+    
+    <item>
+      <title>Reboot and GRUB</title>
+      <link>https://camflow.org/installation/reboot/</link>
+      <pubDate>Sun, 28 Jan 2018 21:54:02 +0100</pubDate>
+      
+      <guid>https://camflow.org/installation/reboot/</guid>
+      <description>When booting a VM after successful provisioning, ensure that the CamFlow kernel is chosen in the GRUB menu, as illustrated bellow:</description>
+    </item>
+    
+  </channel>
+</rss>

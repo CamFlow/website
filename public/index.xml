@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CamFlow</title>
+    <link>https://camflow.org/</link>
+    <description>Recent content on CamFlow</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Jan 2018 22:01:36 +0100</lastBuildDate><atom:link href="https://camflow.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Capture configuration</title>
+      <link>https://camflow.org/configuration/capture/</link>
+      <pubDate>Sun, 28 Jan 2018 21:55:52 +0100</pubDate>
+      
+      <guid>https://camflow.org/configuration/capture/</guid>
+      <description>Sample configuration One of the strengths of CamFlow is the ability to fine-tune the provenance information it captures. Edit /etc/camflow.ini to modify the capture configuration. To apply a new configuration, reboot the machine.
+Alternatively when developing policy you can experiment using camflow CLI (see camflow -h). Policies defined through the CLI are not persisted in current release.
+Follows a sample /etc/camflow.ini configuration:
+[provenance] ;unique identifier for the machine, use hostid if set to 0 machine_id=0 ;enable provenance capture enabled=true ;record provenance of all kernel object all=false node_filter=directory node_filter=inode_unknown node_filter=char node_filter=envp ; propagate_node_filter=directory ; relation_filter=sh_read ; relation_filter=sh_write ; propagate_relation_filter=write [compression] ; enable node compression node=true edge=true duplicate=false [file] ;set opaque file opaque=/usr/bin/bash ;set tracked file ;track=/home/thomas/test.</description>
+    </item>
+    
+    <item>
+      <title>Provenance graph</title>
+      <link>https://camflow.org/tutorial/graph/</link>
+      <pubDate>Sun, 28 Jan 2018 21:54:02 +0100</pubDate>
+      
+      <guid>https://camflow.org/tutorial/graph/</guid>
+      <description>CamFlow represents the execution of a system as a directed acyclic graph. Vertices in the graph represent states of kernel objects (e.g. threads, files, sockets etc&amp;hellip;) and relations represent flow of information between those states.
+
+In the above example process 1 clone process 2. process 2 write to a pipe. process 1 read from the same pipe. Version are created to guarantees acyclicity and to represent proper odering of information (see our CCS&#39;18 paper for details).</description>
+    </item>
+    
+    <item>
+      <title>Recording configuration</title>
+      <link>https://camflow.org/configuration/recording/</link>
+      <pubDate>Sun, 28 Jan 2018 21:55:52 +0100</pubDate>
+      
+      <guid>https://camflow.org/configuration/recording/</guid>
+      <description>After CamFlow captures provenance, you can configure where and in what format the provenance information is published.
+The configuration file is /etc/camflowd.ini.
+To apply a new configuration, run systemctl restart camflowd.service.
+Sample configuration Here is a sample /etc/camflowd.ini configuration.
+[general] ;output=null ;output=mqtt ;output=unix_socket ;output=fifo output=log format=w3c ;format=spade_json [log] path=/tmp/audit.log [mqtt] address=m12.cloudmqtt.com:17065 username=camflow password=test ; message delivered: 0 at most once, 1 at least once, 2 exactly once qos=2 ; topic, provided prefix + machine_id (e.</description>
+    </item>
+    
+    <item>
+      <title>Architecture overview</title>
+      <link>https://camflow.org/tutorial/architecture/</link>
+      <pubDate>Sun, 28 Jan 2018 21:55:52 +0100</pubDate>
+      
+      <guid>https://camflow.org/tutorial/architecture/</guid>
+      <description>CamFlow capture mechanism: CamFlow is an implementation of the whole-system provenance concept. The idea is to perform provenance capture from the OS perspective, while providing guarantees about its completeness. This is achieved by relying on the OS reference monitor that capture interactions between user level applications and kernel objects. CamFlow is implemented in the Linux kernel and relies on the Linux Security Module framework and the NetFilter framework to effect the capture.</description>
+    </item>
+    
+    <item>
+      <title>Capture</title>
+      <link>https://camflow.org/publications/capture/</link>
+      <pubDate>Sun, 28 Jan 2018 21:55:52 +0100</pubDate>
+      
+      <guid>https://camflow.org/publications/capture/</guid>
+      <description>[4] Pasquier T., Han X., Moyer T., Bates A., Eyers D., Hermant O., Bacon J. and Seltzer M. Runtime Analysis of Whole-System Provenance. Conference on Computer and Communications Security (CCS&#39;18) (2018), ACM. pdf bib video
+[3] Pasquier T., Han X., Goldstein M., Moyer T., Eyers D., Seltzer M. and Bacon J. Practical Whole-System Provenance Capture. Symposium on Cloud Computing (SoCC&#39;17) (2017), ACM. pdf bib poster
+[2] Pasquier T., Singh J., , Bacon J.</description>
+    </item>
+    
+    <item>
+      <title>Examples</title>
+      <link>https://camflow.org/output/examples/</link>
+      <pubDate>Sun, 28 Jan 2018 21:55:52 +0100</pubDate>
+      
+      <guid>https://camflow.org/output/examples/</guid>
+      <description>Example of an inode vertex in W3C PROV format:
+&amp;quot;ABAAAAAAACAe9wIAAAAAAE7aeaI+200UAAAAAAAAAAA=&amp;quot;: {&amp;quot;cf:id&amp;quot;: &amp;quot;194334&amp;quot;,&amp;quot;prov:type&amp;quot;: &amp;quot;fifo&amp;quot;,&amp;quot;cf:boot_id&amp;quot;: 2725894734,&amp;quot;cf:machine_id&amp;quot;: 340646718,&amp;quot;cf:version&amp;quot;: 0,&amp;quot;cf:date&amp;quot;: &amp;quot;2017:01:03T16:43:30&amp;quot;,&amp;quot;cf:jiffies&amp;quot;: &amp;quot;4297436711&amp;quot;,&amp;quot;cf:uid&amp;quot;: 1000,&amp;quot;cf:gid&amp;quot;: 1000,&amp;quot;cf:mode&amp;quot;: &amp;quot;0x1180&amp;quot;,&amp;quot;cf:secctx&amp;quot;: &amp;quot;unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023&amp;quot;,&amp;quot;cf:ino&amp;quot;: 51964,&amp;quot;cf:uuid&amp;quot;: &amp;quot;32b7218a-01a0-c7c9-17b1-666f200b8912&amp;quot;,&amp;quot;prov:label&amp;quot;: &amp;quot;[fifo] 0&amp;quot;}Example of an inode vertex in SPADE JSON format:
+{&amp;quot;type&amp;quot;:&amp;quot;Entity&amp;quot;,&amp;quot;id&amp;quot;:&amp;quot;ACAAAAAAACDZtAAAAAAAAAEAAACVwxEABgAAAAAAAAA=&amp;quot;,&amp;quot;annotations&amp;quot;:{&amp;quot;object_id&amp;quot;:&amp;quot;46297&amp;quot;,&amp;quot;object_type&amp;quot;:&amp;quot;socket&amp;quot;,&amp;quot;boot_id&amp;quot;:1,&amp;quot;cf:machine_id&amp;quot;:&amp;quot;cf:1164181&amp;quot;,&amp;quot;version&amp;quot;:6,&amp;quot;cf:date&amp;quot;:&amp;quot;2020:07:11T10:41:28&amp;quot;,&amp;quot;epoch&amp;quot;:2,&amp;quot;uid&amp;quot;:0,&amp;quot;gid&amp;quot;:0,&amp;quot;mode&amp;quot;:&amp;quot;0xc1ff&amp;quot;,&amp;quot;secctx&amp;quot;:&amp;quot;system_u:object_r:unlabeled_t:s0&amp;quot;,&amp;quot;ino&amp;quot;:18274,&amp;quot;uuid&amp;quot;:&amp;quot;00000000-0000-0000-0000-000000000000&amp;quot;}}Example of a write edge in W3C PROV format:</description>
+    </item>
+    
+    <item>
+      <title>Package manager</title>
+      <link>https://camflow.org/installation/package/</link>
+      <pubDate>Sun, 28 Jan 2018 21:55:52 +0100</pubDate>
+      
+      <guid>https://camflow.org/installation/package/</guid>
+      <description>The quickest way to install CamFlow is through the packages hosted on cloudsmith. For now, only Fedora is supported (please, click on this link and check which release(s) is/are currently supported).
+Fedora curl -1sLf &amp;#39;https://dl.cloudsmith.io/public/camflow/camflow/cfg/setup/bash.rpm.sh&amp;#39; | sudo -E bash sudo dnf -y install camflow After installing packages Next we need to activate the two CamFlow services:
+sudo systemctl enable camconfd.service sudo systemctl enable camflowd.service After reboot we should be ready to use CamFlow.</description>
+    </item>
+    
+    <item>
+      <title>Attributes</title>
+      <link>https://camflow.org/output/attributes/</link>
+      <pubDate>Sun, 28 Jan 2018 21:55:52 +0100</pubDate>
+      
+      <guid>https://camflow.org/output/attributes/</guid>
+      <description>cf:machine_id machine unique identifier. (uint32)
+cf:boot_id boot identifier, unique per machine. (uint32)
+cf:id vertex/edge identifier, unique per boot+machine. (uint64)
+cf:date date captured when vertex/edge is recorded in userspace. (string)
+cf:jiffies jiffies captured when vertex/edge is recorded in kernel (uint64)
+Edge attributes cf:offset offset on file object (int64)
+Vertex attributes cf:version object version (version correspond to a state of an object). (uint32)
+cf:uid user ID. (uint32)
+cf:gid group ID. (uint32)
+cf:pid process identifier.</description>
+    </item>
+    
+    <item>
+      <title>Formal modelling</title>
+      <link>https://camflow.org/output/formal/</link>
+      <pubDate>Sun, 28 Jan 2018 21:55:52 +0100</pubDate>
+      
+      <guid>https://camflow.org/output/formal/</guid>
+      <description>We are exploring means to formally model the provenance generated by CamFlow capture system. This is achieved by performing static analysis of the kernel source code. We have made available the models corresponding to LSM hooks and system calls. The models are also available in raw dot format. An early description of the process is described in our CCS&#39;18 paper.</description>
+    </item>
+    
+    <item>
+      <title>Applications</title>
+      <link>https://camflow.org/publications/applications/</link>
+      <pubDate>Sun, 28 Jan 2018 21:54:02 +0100</pubDate>
+      
+      <guid>https://camflow.org/publications/applications/</guid>
+      <description>[9] Han X., Pasquier T., Bates A., Mickens J. and Seltzer M. UNICORN: Runtime Provenance-Based Detector for Advanced Persistent Threats. Network and Distributed System Security Symposium (NDSS&#39;20) (2020). pdf bib video
+[8] Han X., Mickens J., Gehani A., Seltzer M. and Pasquier T. Xanthus: Push-button Orchestration of Host Provenance Data Collection. International Workshop on Practical Reproducible Evaluation of Systems (P-RECS&#39;20) (2020). pdf bib
+[7] G. Ayoade, A. Khandakar, S. Pracheta, G.</description>
+    </item>
+    
+    <item>
+      <title>From source</title>
+      <link>https://camflow.org/installation/source/</link>
+      <pubDate>Sun, 28 Jan 2018 21:54:02 +0100</pubDate>
+      
+      <guid>https://camflow.org/installation/source/</guid>
+      <description>Dependencies First we need to install the dependencies required to build our kernel.
+Depending on how recent your OS version is, you should install libelf-dev, libelf-devel, or elfutils-libelf-devel. See this issue for details.
+Fedora sudo dnf groupinstall &amp;#39;Development Tools&amp;#39; sudo dnf install ncurses-devel cmake clang gcc-c++ wget git openssl-devel zlib sudo dnf install patch mosquitto bison flex ruby dwarves elfutils-libelf-devel sudo dnf install uthash-devel inih-devel paho-c-devel Building and Installing the kernel We first need to clone the camflow-install repository:</description>
+    </item>
+    
+    <item>
+      <title>Walk-through</title>
+      <link>https://camflow.org/tutorial/walk/</link>
+      <pubDate>Sun, 28 Jan 2018 21:54:02 +0100</pubDate>
+      
+      <guid>https://camflow.org/tutorial/walk/</guid>
+      <description>In this walk-through we explore how to capture and look at the provenance generated by wget. The tutorial assumes that CamFlow has been installed and is running on a Fedora machine, and that the reader has some familiarity with our paper describing linux provenance capture (ACM SoCC&#39;17).
+You can install nano to easily edit files from the command line:
+$ sudo dnf install nanoFirst we should verify that our kernel indeed contains CamFlow:</description>
+    </item>
+    
+    <item>
+      <title>Support</title>
+      <link>https://camflow.org/about/support/</link>
+      <pubDate>Sun, 28 Jan 2018 21:48:57 +0100</pubDate>
+      
+      <guid>https://camflow.org/about/support/</guid>
+      <description>CamFlow development started in 2014 at the University of Cambridge&amp;rsquo;s Opera Research Group (grant EPSRC EP/K011510/1). Further development has been supported by Harvard University&amp;rsquo;s Center for Research on Computation and Society as part of the Provenance@Harvard project (NSF grant SSI-1450277) and the University of Cambridge&amp;rsquo;s Digital Technology Group. Development is currently being supported by the University of Bristol and the University of British Columbia.</description>
+    </item>
+    
+    <item>
+      <title>Vagrant</title>
+      <link>https://camflow.org/installation/vagrant/</link>
+      <pubDate>Sun, 28 Jan 2018 21:54:02 +0100</pubDate>
+      
+      <guid>https://camflow.org/installation/vagrant/</guid>
+      <description>Using a vagrant virtual machine is much simpler. First you need to install vagrant and virtualbox.
+On Ubuntu, for example, that can be done as follows:
+sudo apt-get install virtualbox sudo apt-get install vagrant Some Linux distributions ship very outdated version of VirtualBox or Vagrant. Outdated versions, and host/guest version mismatch are known to cause all sorts of troubles during provisioning.
+Please check Vagrant and VirtualBox for details on how to install the latest version.</description>
+    </item>
+    
+    <item>
+      <title>Contributing</title>
+      <link>https://camflow.org/about/contributing/</link>
+      <pubDate>Sun, 28 Jan 2018 21:58:09 +0100</pubDate>
+      
+      <guid>https://camflow.org/about/contributing/</guid>
+      <description>The easiest way to contribute to CamFlow is by submitting issues to suggest improvements or report bugs. When reporting a bug, please specify the version of CamFlow you are running and your Linux distribution. To contribute a new feature, please fork the repository of the component you wish to improve, and submit a pull request against the dev branch. The pull request must pass the continuous integration test before it can be merged.</description>
+    </item>
+    
+    <item>
+      <title>Reboot and GRUB</title>
+      <link>https://camflow.org/installation/reboot/</link>
+      <pubDate>Sun, 28 Jan 2018 21:54:02 +0100</pubDate>
+      
+      <guid>https://camflow.org/installation/reboot/</guid>
+      <description>When booting a VM after successful provisioning, ensure that the CamFlow kernel is chosen in the GRUB menu, as illustrated bellow:</description>
+    </item>
+    
+  </channel>
+</rss>

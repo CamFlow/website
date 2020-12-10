@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CamFlow project on CamFlow</title>
+    <link>https://camflow.org/about/</link>
+    <description>Recent content in CamFlow project on CamFlow</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Jan 2018 15:42:17 +0100</lastBuildDate><atom:link href="https://camflow.org/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Support</title>
+      <link>https://camflow.org/about/support/</link>
+      <pubDate>Sun, 28 Jan 2018 21:48:57 +0100</pubDate>
+      
+      <guid>https://camflow.org/about/support/</guid>
+      <description>CamFlow development started in 2014 at the University of Cambridge&amp;rsquo;s Opera Research Group (grant EPSRC EP/K011510/1). Further development has been supported by Harvard University&amp;rsquo;s Center for Research on Computation and Society as part of the Provenance@Harvard project (NSF grant SSI-1450277) and the University of Cambridge&amp;rsquo;s Digital Technology Group. Development is currently being supported by the University of Bristol and the University of British Columbia.</description>
+    </item>
+    
+    <item>
+      <title>Contributing</title>
+      <link>https://camflow.org/about/contributing/</link>
+      <pubDate>Sun, 28 Jan 2018 21:58:09 +0100</pubDate>
+      
+      <guid>https://camflow.org/about/contributing/</guid>
+      <description>The easiest way to contribute to CamFlow is by submitting issues to suggest improvements or report bugs. When reporting a bug, please specify the version of CamFlow you are running and your Linux distribution. To contribute a new feature, please fork the repository of the component you wish to improve, and submit a pull request against the dev branch. The pull request must pass the continuous integration test before it can be merged.</description>
+    </item>
+    
+  </channel>
+</rss>

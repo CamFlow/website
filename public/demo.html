@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-83032453-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-83032453-1');
+		</script>
+		<meta name="description" content="CamFlow visualisation demonstration tool."/>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<title>CamFlow MQTT web-client demo</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<link rel="stylesheet" href="./css/vex.css" />
+		<link rel="stylesheet" href="./css/vex-theme-flat-attack.css" />
+		<link rel="stylesheet" href="./css/cytoscape.js-panzoom.css" />
+		<link rel="stylesheet" href="./css/font-awesome.min.css" />
+		<link rel="stylesheet" href="./css/cytoscape.js-navigator.css" />
+
+		<script src="./javascripts/jquery-2.0.3.min.js"></script>
+		<script src="./javascripts/vex.combined.min.js"></script>
+		<script>vex.defaultOptions.className = 'vex-theme-flat-attack'</script>
+		<script src="./javascripts/cytoscape.min.js"></script>
+		<script src="./javascripts/dagre.min.js"></script>
+		<script src="./javascripts/cytoscape-dagre.js"></script>
+		<script src="./javascripts/cytoscape-cose-bilkent.js"></script>
+		<script src="./javascripts/cytoscape-spread.js"></script>
+		<script src="./javascripts/mqttws31.js"></script>
+		<script src="./javascripts/pako.js"></script>
+		<script src="./javascripts/cytoscape-prov-core.js"></script>
+		<script src="./javascripts/cytoscape-prov-json.js"></script>
+		<script src="./javascripts/cytoscape-prov-mqtt.js"></script>
+		<script src="./javascripts/cytoscape-prov-menu.js"></script>
+		<script src="./javascripts/FileSaver.min.js"></script>
+		<script src="./javascripts/cytoscape-cxtmenu.js"></script>
+		<script src="./javascripts/cytoscape-panzoom.js"></script>
+		<script src="./javascripts/cytoscape-navigator.js"></script>
+		<script>
+			$.urlParam = function(name){
+				var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+				if (results==null){
+				   return null;
+				}
+				else{
+				   return decodeURI(results[1]);
+				}
+			}
+		</script>
+		<script>
+			function inflateB64(str){
+				/* convert from B64 to byteArray */
+				var byteCharacters = atob(str);
+				var byteNumbers = new Array(byteCharacters.length);
+				for (var i = 0; i < byteCharacters.length; i++) {
+					byteNumbers[i] = byteCharacters.charCodeAt(i);
+				}
+				var byteArray = new Uint8Array(byteNumbers);
+				/* decompress */
+				var data = pako.inflate(byteArray);
+				var strData = String.fromCharCode.apply(null, new Uint16Array(data));
+				return strData;
+			}
+		</script>
+		<script>
+			$(function(){
+				var cy = window.cy = cytoscape({
+					container: document.getElementById('cy'),
+
+					boxSelectionEnabled: false,
+
+					layout: {
+						name: 'dagre',
+						rankDir: 'TB'
+					},
+
+					style: [
+					{
+						selector: 'node',
+						style: {
+							'content': 'data(label)',
+							'text-opacity': 0.5,
+							'text-valign': 'center',
+							'text-halign': 'right',
+							'width': 'data(weight)',
+							'height': 'data(weight)'
+						}
+					},
+
+					{
+						selector: 'node[type="entity"]',
+						style: {
+							'background-color': '#FFB266',
+							'shape': 'ellipse'
+						}
+					},
+
+					{
+						selector: 'node[type="agent"]',
+						style: {
+							'background-color': '#66FF66',
+							'shape': 'octagon'
+						}
+					},
+
+					{
+						selector: 'node[type="activity"]',
+						style: {
+							'background-color': '#ccd9ff',
+							'shape': 'rectangle'
+						}
+					},
+
+					{
+						selector: 'edge',
+						style: {
+							'label': 'data(label)',
+							'edge-text-rotation': 'autorotate',
+							'text-wrap': 'wrap',
+							'width': 3,
+							'length': 'auto',
+							'source-arrow-shape': 'triangle',
+							'line-color': 'data(color)',
+							'source-arrow-color': 'data(color)',
+							'curve-style': 'bezier',
+							'control-point-step-size': 40,
+							'font-size': 6,
+							'text-outline-color': '#FFFFFF',
+							'text-outline-width': 1,
+						}
+					},
+					{
+						selector: 'edge[label="wasInformedBy"]',
+						style: {
+							'length': '50',
+						}
+					},
+					{
+					  selector: ':parent',
+					  style: {
+						'background-opacity': 0.333
+					  }
+					},
+					{
+						selector: ':selected',
+						style: {
+							'border-width': 3,
+							'border-color': '#333'
+						}
+					},
+					{
+						selector: '.faded',
+						style: {
+							'opacity': 0.25
+						}
+					}
+					,
+					{
+						selector: 'node.prov_successor',
+						style: {
+							'border-width': 3,
+							'border-color': 'blue'
+						}
+					}
+					,
+					{
+						selector: 'node.prov_ancestor',
+						style: {
+							'border-width': 3,
+							'border-color': 'red'
+						}
+					}
+				]
+				});
+
+				var cxtmenuApi = cy.cxtmenu( prov_menu );
+				cy.panzoom({zoomOnly: true});
+				cy.navigator({});
+			});
+		</script>
+		<style>
+			#cy {
+				width: 800px;
+				height: 600px;
+				position: absolute;
+				left: 280px;
+				top: 0;
+				z-index: 0;
+			}
+			#control {
+			  width=190px;
+			  position: absolute;
+			  left: 0px;
+			  top: 0px;
+			  margin:5px;
+			  z-index: 9999;
+			  margin: 0.5em;
+			  width: 14em;
+			}
+		</style>
+	</head>
+	<body oncontextmenu="return false">
+		<div id="control">
+			<div id="import">
+				<input type="file" id="fileinput"/>
+				<script type="text/javascript">
+				  function readSingleFile(evt) {
+					//Retrieve the first (and only!) File from the FileList object
+					var f = evt.target.files[0];
+
+					if (f) {
+					  var r = new FileReader();
+					  r.onload = function(e) {
+							var contents = e.target.result;
+							cy.prov_json().parse(contents);
+							cy.prov_core().weight('rdt:duration', 1);
+					  }
+					  r.readAsText(f);
+					} else {
+					  alert("Failed to load file");
+					}
+				  }
+
+				  document.getElementById('fileinput').addEventListener('change', readSingleFile, false);
+				</script>
+			</div>
+			<div id="export_json">
+				<script type="text/javascript">
+					function exportJSON() {
+						var json = cy.prov_json().exportProvJSON();
+						var blob = new Blob([JSON.stringify(json)], {type: "text/plain;charset=utf-8"});
+						saveAs(blob, "provenance.json");
+					}
+				</script>
+				<button type="button" id="json_button" onclick="exportJSON();">Export JSON</button>
+			</div>
+			<div>
+				<script>
+ 					function startMQTT(){
+ 						cy.prov_mqtt().init('m12.cloudmqtt.com', 37065, 'ws' + Math.random());
+ 						cy.prov_mqtt().setOutputElement('mqtt');
+ 						cy.prov_mqtt().setTopic('camflow/#');
+ 						cy.prov_mqtt().connect(true, 'camflow', 'test');
+ 					}
+ 				</script>
+ 				<button type="button" onclick="startMQTT();">Start CamFlow MQTT</button><span id="mqtt"></span>
+			</div>
+			<div>
+				<script>
+					function showAncestor(){
+						var show = document.getElementById("ancestors").checked;
+						cy.prov_core().setShowAncestors(show);
+					}
+					function showSuccessor(){
+						var show = document.getElementById("successors").checked;
+						cy.prov_core().setShowSuccessors(show);
+					}
+					function ignoreControl(){
+						var ignore = document.getElementById("controlFlow").checked;
+						cy.prov_core().setIgnoreControlFlow(ignore);
+					}
+				</script>
+				<ul>
+				<li><input type="checkbox" id="ancestors" name="ancestors" value="ancestors" onclick="showAncestor();"checked>Show Ancestors</li>
+				<li><input type="checkbox" id="successors" name="successors" value="successors" onclick="showSuccessor();" checked>Show Successors</li>
+				<li><input type="checkbox" id="controlFlow" name="controlFlow" value="controlFlow" onclick="ignoreControl();">Ignore Control Flow</li>
+				</ul>
+				<script>
+					function search() {
+						cy.nodes().unselect();
+						var b = document.getElementById('search').value;
+						var eles = cy.nodes("[label*='"+b+"']");
+						if(eles.empty()){
+							vex.dialog.alert("Sorry, no node matching your query was found.");
+							return;
+						}
+						eles.each(function(i, node){
+							node.select();
+						});
+						cy.fit(eles, 10);
+					}
+				</script>
+				<form id="tfnewsearch" action="javascript:search()">
+					<input type="text" id="search" size="21" maxlength="120" placeholder="Search..."></input>
+				</form>
+			</div>
+		</div>
+
+
+		<div id="cy" width="100%", height="70%" style="background-color: #cccccc;"></div>
+	</body>
+</html>
