@@ -9,7 +9,7 @@ The concept behind CamQuery is described in our [CCS'18 paper](http://camflow.or
 
 {{% block note %}}
 This section is under construction as we work further on this aspect of the project.
-If you encounter any difficulty, please contact [Thomas Pasquier](http://tfjmp.org)!
+If you encounter any difficulty, please contact [Thomas Pasquier](https://tfjmp.org/)!
 {{% /block %}}
 
 We assume a machine with CamFlow newly installed and running.
