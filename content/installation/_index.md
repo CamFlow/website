@@ -20,6 +20,6 @@ is a complex environment with a multitude of moving parts and our resources are 
 CamFlow is mostly tested in virtualized environment and we do not have the resources
 for extensive test.
 Please, get in touch with
-[Thomas Pasquier](mailto:thomas.pasquier@bristol.ac.uk)
+[Thomas Pasquier](https://tfjmp.org/)
 if you encounter any issue.
 {{% /block %}}
