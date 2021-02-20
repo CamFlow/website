@@ -11,5 +11,5 @@ The whole-system provenance capture mechanism is highly configurable, and can fi
 CamFlow can stack with existing security modules such as [SELinux](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/5/html/deployment_guide/ch-selinux).
 
 {{% block info %}}
-To get in touch about the project, please contact [Thomas Pasquier](http://tfjmp.org).
+To get in touch about the project, please contact [Thomas Pasquier](https://tfjmp.org).
 {{% /block %}}
