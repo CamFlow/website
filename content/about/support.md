@@ -7,7 +7,7 @@ weight: 20
 
 CamFlow development started in 2014 at the University of Cambridge's [Opera Research Group](https://www.cl.cam.ac.uk/research/srg/opera/) (grant [EPSRC EP/K011510/1](http://gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/K011510/1)).
 Further development has been supported by Harvard University's [Center for Research on Computation and Society](https://crcs.seas.harvard.edu/) as part of the [Provenance@Harvard](https://projects.iq.harvard.edu/provenance-at-harvard) project (NSF grant [SSI-1450277](https://nsf.gov/awardsearch/showAward?AWD_ID=1450277)) and the University of Cambridge's [Digital Technology Group](https://www.cl.cam.ac.uk/research/dtg/www/).
-Development is currently being supported by the [University of Bristol](http://www.bris.ac.uk/engineering/departments/computerscience/) and the [University of British Columbia](https://www.cs.ubc.ca/labs/nss/html/projects.html).
+Development is currently being supported by the [University of Bristol](http://www.bris.ac.uk/engineering/departments/computerscience/) and the [University of British Columbia](https://systopia.cs.ubc.ca/).
 
 <style>
 .r_row {
