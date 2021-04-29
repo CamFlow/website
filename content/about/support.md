@@ -39,4 +39,4 @@ Development is currently being supported by the [University of Bristol](http://w
   </div>
 </div>
 
-Thanks to [Cloudsmith](https://cloudsmith.com/) for providing hosting for our binary packages.
+Thanks to [Cloudsmith](https://cloudsmith.com/) for hosting our packages.
