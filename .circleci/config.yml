@@ -26,7 +26,7 @@ jobs:
                 at: ~/build
             - run: 'git config --global user.email $GH_EMAIL'
             - run: 'git config --global user.name $GH_NAME'
-            - run: 'git clone https://github.com/camflow/camflow.github.io'
+            - run: 'git clone https://github.com/CamFlow/CamFlow.github.io.git'
             - run: 'ls'
             - run: 'rsync -av public/ tfjmp.github.io'
             - run:
@@ -38,7 +38,7 @@ jobs:
                     if ! git diff-index --exit-code --quiet HEAD; then
                         echo 'Committing...'
                         git commit -a -m "[ci skip] automatically generated website, based on commit ${CIRCLE_SHA1} from https://github.com/camflow/website"
-                        git push -q https://${GH_TOKEN}@github.com/camflow/camflow.github.io.git HEAD:master
+                        git push -q https://${GH_TOKEN}@github.com/CamFlow/CamFlow.github.io.git HEAD:master
                     else
                         echo 'Nothing to commit.'
                     fi
