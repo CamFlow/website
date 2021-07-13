@@ -38,7 +38,7 @@ jobs:
                     if ! git diff-index --exit-code --quiet HEAD; then
                         echo 'Committing...'
                         git commit -a -m "[ci skip] automatically generated website, based on commit ${CIRCLE_SHA1} from https://github.com/camflow/website"
-                        git push -q https://tfjmp:${GH_TOKEN}@github.com/CamFlow/CamFlow.github.io.git HEAD:master
+                        git push origin master
                     else
                         echo 'Nothing to commit.'
                     fi
