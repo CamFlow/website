@@ -28,19 +28,17 @@ jobs:
             - run: 'git config --global user.name $GH_NAME'
             - run: 'git clone https://github.com/CamFlow/CamFlow.github.io.git'
             - run: 'ls'
-            - run: 'rsync -av public/ tfjmp.github.io'
+            - run: 'rsync -av public/ CamFlow.github.io'
             - run:
                 name: 'Publish on Github.'
                 command: |
-                    cd tfjmp.github.io
+                    cd CamFlow.github.io
                     git add .
                     git status
                     if ! git diff-index --exit-code --quiet HEAD; then
-                        echo 'Add origin...'
-                        git remote add origin https://tfjmp:${GH_TOKEN}@github.com/CamFlow/CamFlow.github.io.git
                         echo 'Committing...'
                         git commit -a -m "[ci skip] automatically generated website, based on commit ${CIRCLE_SHA1} from https://github.com/camflow/website"
-                        git push -q origin master
+                        git push -q https://${GH_TOKEN}@github.com/CamFlow/CamFlow.github.io.git HEAD:master
                     else
                         echo 'Nothing to commit.'
                     fi
