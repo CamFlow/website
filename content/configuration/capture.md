@@ -36,8 +36,11 @@ node_filter=envp
 ; propagate_relation_filter=write
 
 [compression]
+; enable/disable versioning
+version=true
 ; enable node compression
 node=true
+; enable edge compression
 edge=true
 duplicate=false
 
@@ -60,20 +63,34 @@ opaque=/usr/bin/bash
 ;record exchanged with local server
 ;record=127.0.0.1/32:80
 
+
 [user]
-;opaque=vagrant
 ;track=vagrant
 ;propagate=vagrant
+;opaque=vagrant
 
 [group]
-;opaque=vagrant
 ;track=vagrant
 ;propagate=vagrant
+;opaque=vagrant
 
 [secctx]
 ;track=system_u:object_r:bin_t:s0
 ;propagate=system_u:object_r:bin_t:s0
 ;opaque=system_u:object_r:bin_t:s0
+
+[relay]
+; those parameters set the size of the kernel relay buffer
+; more info about relay here:
+; https://www.kernel.org/doc/html/latest/filesystems/relay.html
+; size of relay buffer is equal to (1 << buff_exp) * subuf_nb
+; you may want to change this value if you observe event drops
+; (i.e. graph with missing edges and nodes), you can check drops
+; through the command:
+; camflow --drop
+; be careful when changing those values.
+buff_exp=20
+subuf_nb=8
 ```
 
 ## Configuration parameters
@@ -202,4 +219,13 @@ Specify a security context using the format of the main Linux Security Module of
 
 {{% block note %}}
 Further information about these parameters may be gleaned by perusing the [header files](https://github.com/CamFlow/camflow-dev/tree/master/security/provenance/include) in the kernel module.
+{{% /block %}}
+
+### relay
+
+This set the size of the kernel relay buffer.
+
+{{% block warning %}}
+If you notice event losses, do adjust this parameters (this may happen with systems under heavy workload).
+You can check the number of dropped events using `camflow --drop`.
 {{% /block %}}

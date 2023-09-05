@@ -23,8 +23,8 @@ Here is a sample `/etc/camflowd.ini` configuration.
 ;output=fifo
 output=log
 
-format=w3c
-;format=spade_json
+;format=w3c
+format=spade_json
 
 [log]
 path=/tmp/audit.log
