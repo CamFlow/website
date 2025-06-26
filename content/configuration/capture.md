@@ -223,9 +223,9 @@ Further information about these parameters may be gleaned by perusing the [heade
 
 ### relay
 
-This set the size of the kernel relay buffer.
+This sets the size of the kernel relay buffer.
 
 {{% block warning %}}
-If you notice event losses, do adjust this parameters (this may happen with systems under heavy workload).
+If you notice event losses, do adjust these parameters (this may happen with systems under heavy workload).
 You can check the number of dropped events using `camflow --drop`.
 {{% /block %}}

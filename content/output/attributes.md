@@ -43,7 +43,7 @@ weight: 20
 
 **cf:length** size of path/value/name/content attribute when present. (uint32)
 
-**cf:valid** iattribute valid value. (uint32)
+**cf:valid** attribute valid value. (uint32)
 
 **cf:atime** access time. (int64)
 

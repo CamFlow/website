@@ -4,7 +4,8 @@
     <title>Tags on CamFlow</title>
     <link>https://camflow.org/tags/</link>
     <description>Recent content in Tags on CamFlow</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://camflow.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://camflow.org/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

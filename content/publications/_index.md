@@ -11,11 +11,11 @@ Details given in these papers may be outdated -- please refer to the code if in 
 {{% block note %}}
 Using [CamFlow](./publications/socc-2017.pdf) in your paper? Cite the following paper:
 
-```
+```text
 @inproceedings{pasquier-socc2017,
 	title = {Practical Whole-System Provenance Capture},
 	booktitle = {Symposium on Cloud Computing (SoCC{\textquoteright}17)},
-	year = {2017}
+	year = {2017},
 	organization = {ACM},
 	author = {Pasquier, Thomas and Xueyuan Han and Goldstein, Mark and Moyer, Thomas and Eyers, David and Margo Seltzer and Bacon, Jean}
 }
@@ -23,7 +23,7 @@ Using [CamFlow](./publications/socc-2017.pdf) in your paper? Cite the following 
 
 If you are using [CamQuery](./publications/ccs-2018.pdf), please do cite the following paper:
 
-```
+```text
 @inproceedings{pasquier2018ccs,
 	title={Runtime Analysis of Whole-System Provenance},
 	author={Pasquier, Thomas and Han, Xueyuan and Moyer, Thomas and Bates, Adam and Hermant, Olivier and Eyers, David and Bacon, Jean and Seltzer, Margo},

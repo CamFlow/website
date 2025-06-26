@@ -6,7 +6,7 @@ weight: 10
 ---
 
 _Example of an inode vertex in W3C PROV format:_
-```
+```text
 "ABAAAAAAACAe9wIAAAAAAE7aeaI+200UAAAAAAAAAAA=": {
     "cf:id": "194334",
     "prov:type": "fifo",
@@ -25,7 +25,7 @@ _Example of an inode vertex in W3C PROV format:_
 }
 ```
 _Example of an inode vertex in SPADE JSON format:_
-```
+```json
 {
   "type":"Entity",
   "id":"ACAAAAAAACDZtAAAAAAAAAEAAACVwxEABgAAAAAAAAA=",
@@ -49,7 +49,7 @@ _Example of an inode vertex in SPADE JSON format:_
 
 
 _Example of a write edge in W3C PROV format:_
-```
+```text
 "QAAAAAAAQIANAAAAAAAAAE7aeaI+200UAAAAAAAAAAA=": {
     "cf:id": "13",
     "prov:type": "write",
@@ -66,7 +66,7 @@ _Example of a write edge in W3C PROV format:_
 ```
 
 _Example of a write edge in SPADE JSON format:_
-```
+```json
 {
   "type":"WasGeneratedBy",
   "from":"ABAAAAAAACCi2wAAAAAAAAEAAACVwxEAAQAAAAAAAAA=",
