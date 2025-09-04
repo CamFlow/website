@@ -14,7 +14,7 @@ See this [issue](https://github.com/CamFlow/documentation/issues/3) for details.
 
 #### Fedora
 
-``` BASH
+```bash
 sudo dnf groupinstall 'Development Tools'
 sudo dnf install ncurses-devel cmake clang gcc-c++ wget git openssl-devel zlib
 sudo dnf install patch mosquitto bison flex ruby dwarves elfutils-libelf-devel
@@ -25,12 +25,12 @@ sudo dnf install uthash-devel inih-devel paho-c-devel
 
 We first need to clone the `camflow-install` repository:
 
-``` BASH
+```bash
 git clone https://github.com/CamFlow/camflow-install
 ```
 
 We then get the installation started:
-``` BASH
+```bash
 cd camflow-install
 make all
 ```
@@ -40,10 +40,10 @@ This will build and install the CamFlow Linux Security Module as well as the use
 Early in the build process you will be presented with a GUI to customise the kernel configuration. If you are not sure what to do, do not modify the configuration.
 Through this GUI, in addition to enabling provenance capture, you can: 1) set persistence of provenance state on/off (off by default)
 and 2) whole-system capture from boot on/off (off by default).
-The kernel configuration derives from the configuration currently presents on the system where you run the build, consequently in most cases you should not need to modify anything not relating to provenance capture.
+The kernel configuration derives from the configuration currently present on the system where you run the build, consequently in most cases you should not need to modify anything not related to provenance capture.
 
 {{% block warn %}}
-Configuration options need to be carefully considered in resource-constrained environment.
+Configuration options need to be carefully considered in resource-constrained environments.
 {{% /block %}}
 
 {{% block warn %}}
@@ -68,6 +68,6 @@ If `provenance` is not listed, CamFlow module will simply not be loaded.
 
 For the installation process to take effect you need to reboot the machine.
 
-``` BASH
+```bash
 sudo reboot now
 ```

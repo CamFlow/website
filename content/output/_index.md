@@ -12,5 +12,5 @@ The W3C PROV output is not a single JSON object, but rather a collection of obje
 {{% /block %}}
 
 {{% block note %}}
-SPADE JSON is CamFlow default output. One can change this setting by [modifying camflowd configuration](http://localhost:1313/#recording).
+SPADE JSON is CamFlow's default output. One can change this setting by [modifying camflowd configuration](http://localhost:1313/#recording).
 {{% /block %}}

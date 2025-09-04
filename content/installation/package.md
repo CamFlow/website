@@ -9,8 +9,8 @@ The quickest way to install CamFlow is through the packages hosted on **[cloudsm
 
 ### Fedora
 
-``` BASH
-curl -1sLf 'https://dl.cloudsmith.io/public/camflow/camflow/cfg/setup/bash.rpm.sh' | sudo -E bash
+```bash
+curl -1sLf 'https://dl.cloudsmith.io/public/camflow/camflow/cfg/setup/.rpm.sh' | sudo -E 
 sudo dnf -y install camflow
 ```
 
@@ -18,19 +18,19 @@ sudo dnf -y install camflow
 
 Next we need to activate the two CamFlow services:
 
-``` BASH
+```bash
 sudo systemctl enable camconfd.service
 sudo systemctl enable camflowd.service
 ```
 
 After reboot we should be ready to use CamFlow.
 
-``` BASH
+```bash
 sudo reboot now
 ```
 
 {{% block warn %}}
-Packages are tested in virtual environment with a limited set of configurations.
+Packages are tested in virtual environments with a limited set of configurations.
 In most cases things work fine.
-However, if you encounter any issue, please do look at how to build the project from source.
+However, if you encounter any issues, please do look at how to build the project from source.
 {{% /block %}}

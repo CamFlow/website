@@ -13,7 +13,7 @@ This is achieved by relying on the OS [reference monitor](https://en.wikipedia.o
 CamFlow is implemented in the Linux kernel and relies on the [Linux Security Module framework](https://www.kernel.org/doc/Documentation/security/LSM.txt) and the [NetFilter framework](https://en.wikipedia.org/wiki/Netfilter) to effect the capture.
 [source code](https://github.com/CamFlow/camflow-dev)
 
-__camflowd:__ `camflowd` is a daemon charged of recording the provenance captured  in the kernel by CamFlow.
+__camflowd:__ `camflowd` is a daemon charged with recording the provenance captured in the kernel by CamFlow.
 The provenance records are published by CamFlow to [relayfs](https://lwn.net/Articles/174669/) pseudo files.
 The daemons retrieve those records, serialise them to a configuration-specified format and write them to a configuration-specified output.
 [source code](https://github.com/CamFlow/camflowd)

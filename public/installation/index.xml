@@ -4,51 +4,37 @@
     <title>Installation on CamFlow</title>
     <link>https://camflow.org/installation/</link>
     <description>Recent content in Installation on CamFlow</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jan 2018 21:58:09 +0100</lastBuildDate><atom:link href="https://camflow.org/installation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Jan 2018 21:55:52 +0100</lastBuildDate>
+    <atom:link href="https://camflow.org/installation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Package manager</title>
       <link>https://camflow.org/installation/package/</link>
       <pubDate>Sun, 28 Jan 2018 21:55:52 +0100</pubDate>
-      
       <guid>https://camflow.org/installation/package/</guid>
-      <description>The quickest way to install CamFlow is through the packages hosted on cloudsmith. For now, only Fedora is supported (please, click on this link and check which release(s) is/are currently supported).
-Fedora curl -1sLf &amp;#39;https://dl.cloudsmith.io/public/camflow/camflow/cfg/setup/bash.rpm.sh&amp;#39; | sudo -E bash sudo dnf -y install camflow After installing packages Next we need to activate the two CamFlow services:
-sudo systemctl enable camconfd.service sudo systemctl enable camflowd.service After reboot we should be ready to use CamFlow.</description>
+      <description>&lt;p&gt;The quickest way to install CamFlow is through the packages hosted on &lt;strong&gt;&lt;a href=&#34;https://cloudsmith.io/~camflow/repos/camflow/packages/&#34;&gt;cloudsmith&lt;/a&gt;&lt;/strong&gt;. For now, only Fedora is supported (please, click on this &lt;a href=&#34;https://cloudsmith.io/~camflow/repos/camflow/packages/&#34;&gt;link&lt;/a&gt; and check which release(s) is/are currently supported).&lt;/p&gt;&#xA;&lt;h3 id=&#34;fedora&#34;&gt;Fedora&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl -1sLf &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://dl.cloudsmith.io/public/camflow/camflow/cfg/setup/.rpm.sh&amp;#39;&lt;/span&gt; | sudo -E &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo dnf -y install camflow&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;after-installing-packages&#34;&gt;After installing packages&lt;/h3&gt;&#xA;&lt;p&gt;Next we need to activate the two CamFlow services:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl enable camconfd.service&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo systemctl enable camflowd.service&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After reboot we should be ready to use CamFlow.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>From source</title>
       <link>https://camflow.org/installation/source/</link>
       <pubDate>Sun, 28 Jan 2018 21:54:02 +0100</pubDate>
-      
       <guid>https://camflow.org/installation/source/</guid>
-      <description>Dependencies First we need to install the dependencies required to build our kernel.
-Depending on how recent your OS version is, you should install libelf-dev, libelf-devel, or elfutils-libelf-devel. See this issue for details.
-Fedora sudo dnf groupinstall &amp;#39;Development Tools&amp;#39; sudo dnf install ncurses-devel cmake clang gcc-c++ wget git openssl-devel zlib sudo dnf install patch mosquitto bison flex ruby dwarves elfutils-libelf-devel sudo dnf install uthash-devel inih-devel paho-c-devel Building and Installing the kernel We first need to clone the camflow-install repository:</description>
+      <description>&lt;h3 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h3&gt;&#xA;&lt;p&gt;First we need to install the dependencies required to build our kernel.&lt;/p&gt;&#xA;&lt;p&gt;Depending on how recent your OS version is, you should install &lt;code&gt;libelf-dev&lt;/code&gt;, &lt;code&gt;libelf-devel&lt;/code&gt;, or &lt;code&gt;elfutils-libelf-devel&lt;/code&gt;.&#xA;See this &lt;a href=&#34;https://github.com/CamFlow/documentation/issues/3&#34;&gt;issue&lt;/a&gt; for details.&lt;/p&gt;&#xA;&lt;h4 id=&#34;fedora&#34;&gt;Fedora&lt;/h4&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo dnf groupinstall &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Development Tools&amp;#39;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo dnf install ncurses-devel cmake clang gcc-c++ wget git openssl-devel zlib&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo dnf install patch mosquitto bison flex ruby dwarves elfutils-libelf-devel&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo dnf install uthash-devel inih-devel paho-c-devel&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;building-and-installing-the-kernel&#34;&gt;Building and Installing the kernel&lt;/h3&gt;&#xA;&lt;p&gt;We first need to clone the &lt;code&gt;camflow-install&lt;/code&gt; repository:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Vagrant</title>
       <link>https://camflow.org/installation/vagrant/</link>
       <pubDate>Sun, 28 Jan 2018 21:54:02 +0100</pubDate>
-      
       <guid>https://camflow.org/installation/vagrant/</guid>
-      <description>Using a vagrant virtual machine is much simpler. First you need to install vagrant and virtualbox.
-On Ubuntu, for example, that can be done as follows:
-sudo apt-get install virtualbox sudo apt-get install vagrant Some Linux distributions ship very outdated version of VirtualBox or Vagrant. Outdated versions, and host/guest version mismatch are known to cause all sorts of troubles during provisioning.
-Please check Vagrant and VirtualBox for details on how to install the latest version.</description>
+      <description>&lt;p&gt;Using a vagrant virtual machine is much simpler. First you need to install &lt;a href=&#34;https://developer.hashicorp.com/vagrant/install&#34;&gt;vagrant&lt;/a&gt; and &lt;a href=&#34;https://www.virtualbox.org/manual/ch02.html&#34;&gt;virtualbox&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;On Ubuntu, for example, that can be done as follows:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install virtualbox&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install vagrant&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Some Linux distributions ship very outdated versions of VirtualBox or Vagrant.&#xA;Outdated versions, and host/guest version mismatch are known to cause all sorts of troubles during provisioning.&lt;/p&gt;&#xA;&lt;p&gt;Please check &lt;a href=&#34;https://developer.hashicorp.com/vagrant/install&#34;&gt;Vagrant&lt;/a&gt; and &lt;a href=&#34;https://www.virtualbox.org/wiki/Downloads&#34;&gt;VirtualBox&lt;/a&gt; for details on how to install the latest version.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Reboot and GRUB</title>
       <link>https://camflow.org/installation/reboot/</link>
       <pubDate>Sun, 28 Jan 2018 21:54:02 +0100</pubDate>
-      
       <guid>https://camflow.org/installation/reboot/</guid>
-      <description>When booting a VM after successful provisioning, ensure that the CamFlow kernel is chosen in the GRUB menu, as illustrated bellow:</description>
+      <description>&lt;p&gt;When booting a VM after successful provisioning, ensure that the CamFlow kernel&#xA;is chosen in the &lt;a href=&#34;https://www.gnu.org/software/grub/&#34;&gt;GRUB&lt;/a&gt; menu, as illustrated&#xA;below:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./images/grub.png&#34; alt=&#34;Select CamFlow kernel in the GRUB menu.&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

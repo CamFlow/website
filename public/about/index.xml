@@ -4,26 +4,23 @@
     <title>CamFlow project on CamFlow</title>
     <link>https://camflow.org/about/</link>
     <description>Recent content in CamFlow project on CamFlow</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Jan 2018 15:42:17 +0100</lastBuildDate><atom:link href="https://camflow.org/about/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Jan 2018 21:58:09 +0100</lastBuildDate>
+    <atom:link href="https://camflow.org/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Support</title>
       <link>https://camflow.org/about/support/</link>
       <pubDate>Sun, 28 Jan 2018 21:48:57 +0100</pubDate>
-      
       <guid>https://camflow.org/about/support/</guid>
-      <description>CamFlow development started in 2014 at the University of Cambridge&amp;rsquo;s Opera Research Group (grant EPSRC EP/K011510/1). Further development has been supported by Harvard University&amp;rsquo;s Center for Research on Computation and Society as part of the Provenance@Harvard project (NSF grant SSI-1450277) and the University of Cambridge&amp;rsquo;s Digital Technology Group. Development is currently being supported by the University of Bristol and the University of British Columbia.</description>
+      <description>&lt;p&gt;CamFlow development started in 2014 at the University of Cambridge&amp;rsquo;s &lt;a href=&#34;https://www.cl.cam.ac.uk/research/srg/opera/&#34;&gt;Opera Research Group&lt;/a&gt; (grant &lt;a href=&#34;http://gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/K011510/1&#34;&gt;EPSRC EP/K011510/1&lt;/a&gt;).&#xA;Further development has been supported by Harvard University&amp;rsquo;s &lt;a href=&#34;https://crcs.seas.harvard.edu/&#34;&gt;Center for Research on Computation and Society&lt;/a&gt; as part of the &lt;a href=&#34;https://projects.iq.harvard.edu/provenance-at-harvard&#34;&gt;Provenance@Harvard&lt;/a&gt; project (NSF grant &lt;a href=&#34;https://nsf.gov/awardsearch/showAward?AWD_ID=1450277&#34;&gt;SSI-1450277&lt;/a&gt;) and the University of Cambridge&amp;rsquo;s &lt;a href=&#34;https://www.cl.cam.ac.uk/research/dtg/www/&#34;&gt;Digital Technology Group&lt;/a&gt;.&#xA;Development is currently being supported by the &lt;a href=&#34;https://systopia.cs.ubc.ca/&#34;&gt;University of British Columbia&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;Thanks to &lt;a href=&#34;https://cloudsmith.com/&#34;&gt;Cloudsmith&lt;/a&gt; for hosting our packages.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Contributing</title>
       <link>https://camflow.org/about/contributing/</link>
       <pubDate>Sun, 28 Jan 2018 21:58:09 +0100</pubDate>
-      
       <guid>https://camflow.org/about/contributing/</guid>
-      <description>The easiest way to contribute to CamFlow is by submitting issues to suggest improvements or report bugs. When reporting a bug, please specify the version of CamFlow you are running and your Linux distribution. To contribute a new feature, please fork the repository of the component you wish to improve, and submit a pull request against the dev branch. The pull request must pass the continuous integration test before it can be merged.</description>
+      <description>&lt;p&gt;The easiest way to contribute to CamFlow is by submitting issues to suggest improvements or report bugs. When reporting a bug, please specify the version of CamFlow you are running and your Linux distribution. To contribute a new feature, please fork the repository of the component you wish to improve, and submit a pull request against the dev branch. The pull request must pass the continuous integration test before it can be merged.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

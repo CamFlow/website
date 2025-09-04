@@ -4,8 +4,9 @@
     <title>CamQuery on CamFlow</title>
     <link>https://camflow.org/query/</link>
     <description>Recent content in CamQuery on CamFlow</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jan 2018 21:48:57 +0100</lastBuildDate><atom:link href="https://camflow.org/query/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://camflow.org/query/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
